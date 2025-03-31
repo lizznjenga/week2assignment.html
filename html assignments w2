@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registration Form and Contact Table</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+</html>
+<header>
+    <h1>Welcome to our Website</h1>
+</header>
+
+<section>
+    <h2>Our services</h2>
+    <ol type="I">
+        <li>Web Development</li>
+        <li>Mobile app Development</li>
+        <li>UI/UX Design</li>
+        <li>SEO Optimization</li>
+        <li>Digital Marketing</li>
+    </ol>
+</section>
+
+<section>
+    <h2 Our Office></h2>
+    <img src="https://images.pexels.com/photos/1181355/pexels-photo-1181355.jpeg" alt="Office Space" style="width:100%;height:auto;">
+</section>
+
+
+<section>
+    <h2>Our Contacts</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Mobile</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Joe Goldberg</td>
+                <td>123 Main Street</td>
+                <td>(555) 123-4567</td>
+                <td>goldberg.joe@gmail.com</td>
+            </tr>
+            <tr>
+                <td>John Nolan</td>
+                <td>456 Oak Avenue</td>
+                <td>(555) 234-5678</td>
+                <td>nolan.john@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Rhys Montrose</td>
+                <td>789 Pine Road</td>
+                <td>(555) 345-6789</td>
+                <td>montrose@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Linda White</td>
+                <td>101 Maple Drive</td>
+                <td>(555) 456-7890</td>
+                <td>linda.white@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Love Quinn</td>
+                <td>202 Birch Boulevard</td>
+                <td>(555) 567-8901</td>
+                <td>love6@gmail.com</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<section>
+    <h2>Registration Form</h2>
+    <form action="/submit" method="POST">
+
+
+        <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required minlength="8">
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <p>Would you like to receive our newsletter?</p>
+            <input type="radio" id="yes" name="newsletter" value="yes" required>
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="newsletter" value="no" required>
+            <label for="no">No</label>
+
+            <p>Select your interests:</p>
+            <input type="checkbox" id="web" name="interests" value="web development">
+            <label for="web">Web Development</label>
+            <input type="checkbox" id="seo" name="interests" value="seo">
+            <label for="seo">SEO</label>
+            <input type="checkbox" id="design" name="interests" value="design">
+            <label for="design">Design</label>
+
+            <br><br>
+            <button type="submit">Register</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Multimedia Section</h2>
+
+        <!-- Audio Element -->
+        <h3>Listen to Our Welcome Audio</h3>
+        <audio controls>
+            <source src="welcome_audio.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+      
+      
+        <h3>Watch Our Introduction Video</h3>
+        <video controls width="600">
+            <source src="intro_video.mp4" type="video/mp4">
+            Your browser does not support the video element.
+        </video>
+    </section>
+
+</body>
+</html>
+
+
+
